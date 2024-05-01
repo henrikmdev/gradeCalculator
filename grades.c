@@ -9,6 +9,10 @@ typedef struct student {
     double final_grade;
 } Student;
 
+double calculateFinalGrade(Student student) {
+  return ((student.midterm1 + student.midterm2 + student.final_exam)/3);
+}
+
 int main(void) {
   int version = 3;
   printf("\n==Final Grade Calculator v%d==\n", version);
@@ -20,8 +24,7 @@ int main(void) {
   };
 
   for (int i=0; i<3; i++) {
-    student[i].final_grade =
-      (student[i].midterm1 + student[i].midterm2 + student[i].final_exam) / 3;
+    student[i].final_grade = calculateFinalGrade(student[i]);
   }
 
   for (int i=0; i<3; i++) {
