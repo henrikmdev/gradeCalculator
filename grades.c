@@ -13,23 +13,11 @@ int main(void) {
   int version = 2;
   printf("\n==Final Grade Calculator v%d==\n", version);
   printf("Let's grade!\n\n");
-  Student student[3];
-
-  strcpy(student[0].name, "Alvin");
-  strcpy(student[1].name, "Bella");
-  strcpy(student[2].name, "Charlie");
-
-  student[0].midterm1 = 86;
-  student[1].midterm1 = 78;
-  student[2].midterm1 = 70;
-
-  student[0].midterm2 = 90;
-  student[1].midterm2 = 84;
-  student[2].midterm2 = 77;
-
-  student[0].final_exam = 98;
-  student[1].final_exam = 90;
-  student[2].final_exam = 92;
+  Student student[3] = {
+      {"Alvin", 86, 90, 98},
+      {"Bella", 78, 84, 90},
+      {"Charlie", 70, 77, 92}
+  };
 
   for (int i=0; i<3; i++) {
     student[i].final_grade =
