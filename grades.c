@@ -10,7 +10,7 @@ typedef struct student {
 } Student;
 
 int main(void) {
-  int version = 2;
+  int version = 3;
   printf("\n==Final Grade Calculator v%d==\n", version);
   printf("Let's grade!\n\n");
   Student student[3] = {
