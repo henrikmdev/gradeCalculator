@@ -10,7 +10,8 @@ typedef struct student {
 } Student;
 
 int main(void) {
-  printf("\nLet's grade!\n");
+  printf("\n==Final Grade Calculator v1==\n");
+  printf("Let's grade!\n\n");
   Student student[3];
 
   strcpy(student[0].name, "Alvin");
