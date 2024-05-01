@@ -10,11 +10,11 @@ typedef struct student {
 } Student;
 
 int main(void) {
-  int version = 3;
+  int version = 5;
   printf("\n==Final Grade Calculator v%d==\n", version);
   printf("Let's grade!\n\n");
   Student student[3] = {
-      {"Alvin", 86, 90, 98},
+      {"Alvin", 86, 90, 100},
       {"Bella", 78, 84, 90},
       {"Charlie", 70, 77, 92}
   };
