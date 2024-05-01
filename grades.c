@@ -14,7 +14,7 @@ double calculateFinalGrade(Student student) {
 }
 
 int main(void) {
-  int version = 3;
+  int version = 4;
   printf("\n==Final Grade Calculator v%d==\n", version);
   printf("Let's grade!\n\n");
   Student student[3] = {
